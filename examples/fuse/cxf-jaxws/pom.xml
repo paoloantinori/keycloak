@@ -32,7 +32,6 @@
     <description/>
 
     <properties>
-        <cxf.version>3.0.4</cxf.version>
         <keycloak.osgi.export>
         </keycloak.osgi.export>
         <keycloak.osgi.import>

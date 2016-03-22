@@ -72,7 +72,8 @@ public class ServletReregistrationService {
 
     public void start() {
         if (servletReference == null) {
-            throw new IllegalStateException("No servlet reference provided");
+            //throw new IllegalStateException("No servlet reference provided");
+            return;
         }
 
         final Servlet servlet = (Servlet) bundleContext.getService(servletReference);

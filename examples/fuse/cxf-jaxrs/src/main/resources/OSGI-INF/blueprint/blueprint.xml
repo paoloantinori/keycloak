@@ -70,7 +70,7 @@
           init-method="start" destroy-method="stop">
         <property name="bundleContext" ref="blueprintBundleContext" />
         <property name="servletReference">
-            <reference interface="javax.servlet.Servlet" filter="(alias=/cxf)" timeout="5000" />
+            <reference interface="javax.servlet.Servlet" filter="(alias=/cxf)" timeout="5000" availability="optional"  />
         </property>
     </bean>
 
