@@ -22,7 +22,7 @@
         <details>The keycloak fuse example</details>
         <feature>war</feature>
         <feature>camel</feature>
-        <feature>camel-jetty</feature>
+        <feature>camel-jetty9</feature>
         <feature>cxf</feature>
         <feature>keycloak</feature>
         <bundle dependency="true">mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/${jackson.version}</bundle>
