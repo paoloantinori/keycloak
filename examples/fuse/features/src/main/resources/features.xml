@@ -22,9 +22,19 @@
         <details>The keycloak fuse example</details>
         <feature>war</feature>
         <feature>camel</feature>
-        <feature>camel-jetty9</feature>
         <feature>cxf</feature>
         <feature>keycloak</feature>
+
+        <!-- JBoss Fuse 6.3 - Jetty 9 based-->
+        <feature>keycloak-jetty9-adapter</feature>
+        <feature>camel-jetty9</feature>
+
+        <!-- JBoss Fuse 6.2 - Jetty 8 based-->
+        <!--
+        <feature>keycloak-jetty8-adapter</feature>
+        <feature>camel-jetty</feature>
+        -->
+
         <bundle dependency="true">mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/${jackson.version}</bundle>
         <bundle dependency="true">mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/${jackson.version}</bundle>
         <bundle>mvn:org.keycloak.example.demo/product-portal-fuse-example/${project.version}</bundle>

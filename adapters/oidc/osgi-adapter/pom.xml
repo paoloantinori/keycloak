@@ -36,7 +36,7 @@
             org.keycloak.adapters.osgi.*
         </keycloak.osgi.export>
         <keycloak.osgi.import>
-            org.ops4j.pax.web.*;version="[4.0,5)",
+            org.ops4j.pax.web.*;version="[3.0,5)",
             javax.servlet.*;version="[2.5,4)";resolution:=optional,
             org.eclipse.jetty.*;version="[8.1,10)";resolution:=optional,
             org.keycloak.*;version="${project.version}",
@@ -75,6 +75,11 @@
             <artifactId>jetty-security</artifactId>
             <version>${jetty9.version}</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-servlet</artifactId>
+            <version>9.2.14.v20151106</version>
         </dependency>
     </dependencies>
 

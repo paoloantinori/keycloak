@@ -70,8 +70,8 @@
     <feature name="keycloak" version="${project.version}" resolver="(obr)">
         <details>The keycloak adapter core stuff</details>
         <feature>keycloak-osgi-adapter</feature>
-        <feature>keycloak-jetty9-adapter</feature>
         <feature>keycloak-jaas</feature>
+        <!-- couple the inclusion of this feature with either "keycloak-jetty8-adapter" or "keycloak-jetty9-adapter"  -->
     </feature>
 
     <!-- This is just simplification to upgrade paxweb to 3.1.2 in JBoss Fuse 6.1 or Karaf 2.3.X environment -->
